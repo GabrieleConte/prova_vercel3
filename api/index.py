@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/flaskback', methods=["GET"])
 def flaskback():
-    x = {'id': 'Frase caricata dal backend'}
+    x = {'id': 'Generatore di meme'}
     res = jsonify(x)
     res.headers["Content-Type"] = "application/json"
     res.headers["Access-Control-Allow-Origin"] = "*"
