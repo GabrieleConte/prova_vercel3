@@ -1,13 +1,12 @@
 
 from flask import Flask, jsonify, render_template, send_from_directory
-from flask_cors import CORS
 from flask_compress import Compress
 
 #comprime i pacchetti per maggiori performance
 
 app = Flask(__name__)
 Compress(app)
-CORS(app)
+
 
 
 
